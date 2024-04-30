@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-green: #003033;
+  --color-white: #fff;
+}
+
+body {
+  position: relative;
+}
+
+.welcome-section {
+  position: relative;
+}
+
+h1 {
+  font-family: "Alegreya Sans SC";
+  font-weight: 500;
+  font-size: 5rem;
+  padding-top: 2.5rem;
+  left: 50%;
+}
+
+p {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1.5rem;
+  left: 23%;
+  top: 50vh;
+}
+
+span {
+  font-family: "Alegreya Sans SC";
+  font-size: 1.5rem;
+  border-bottom: solid 2px var(--color-green);
+}
+
+h1,
+p {
+  position: absolute;
+  color: var(--color-green);
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: "Inter";
+  font-weight: 800;
+  line-height: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+a:hover {
+  transition: 0.2s linear;
+  border-bottom: solid 1px var(--color-white);
+}
+
+h2,
+a {
+  font-family: "Inter";
+  color: var(--color-white);
+}
+
+ul > li {
+  line-height: 2.5rem;
+  list-style-type: none;
+}
+
+.left-menu {
+  background-color: var(--color-green);
+  padding: 1.5rem;
+  width: fit-content;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+
+#background-img {
+  position: absolute;
+  top: 0;
+  right: -2.5%;
+  max-height: 100vh;
+  opacity: 40%;
+  z-index: -10%;
+}
