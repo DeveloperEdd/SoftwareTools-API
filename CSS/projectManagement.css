@@ -28,15 +28,6 @@ h1 {
   margin: 2.5rem;
 }
 
-#hero-title_icon {
-  width: 4rem;
-  height: 4rem;
-  position: fixed;
-  top: 0;
-  right: 0;
-  margin: 1.5rem 2.5rem;
-}
-
 .hero-toolBox > div {
   background-color: var(--color-green);
   width: 484px;
