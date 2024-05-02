@@ -39,8 +39,8 @@ h1 {
 
 .hero-toolBox > div {
   background-color: var(--color-green);
-  width: 484px; /* Testar: 400px */
-  height: 346px; /* Testar: 250px */
+  width: 484px;
+  height: 346px;
 }
 
 .hero-toolBox > div > h2 {
@@ -84,10 +84,6 @@ h1 {
   right: 5%;
 }
 
-/* .hero-toolbox_trello__seeMore:hover {
-    background-color: var(--color-btn);
-} */
-
 .hero-toolbox_jira {
   position: fixed;
   left: 47%;
@@ -110,41 +106,4 @@ h1 {
   position: fixed;
   right: 15%;
   top: 57%;
-}
-
-/* Menu Lateral */
-.left-menu_title {
-  font-size: 3rem;
-  font-weight: 800;
-  line-height: 2.8rem;
-  margin-bottom: 2.5rem;
-}
-
-.menu-navbar_option > a {
-  text-decoration: none;
-}
-
-.menu-navbar_option > a:hover {
-  transition: 0.2s linear;
-  border-bottom: solid 1px var(--color-white);
-}
-
-.left-menu_title,
-.menu-navbar_option > a {
-  font-family: "Inter";
-  color: var(--color-white);
-}
-
-.left-menu_navbar > .menu-navbar_option {
-  line-height: 2.5rem;
-  list-style-type: none;
-}
-
-.left-menu {
-  background-color: var(--color-green);
-  padding: 1.5rem;
-  width: fit-content;
-  height: 100vh;
-  position: fixed;
-  top: 0;
 }
