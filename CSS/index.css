@@ -11,14 +11,6 @@
   --color-white: #fff;
 }
 
-body {
-  position: relative;
-}
-
-.welcome-section {
-  position: relative;
-}
-
 h1 {
   font-family: "Alegreya Sans SC";
   font-weight: 500;
@@ -46,8 +38,6 @@ p {
   position: absolute;
   color: var(--color-green);
 }
-
-
 
 #background-img {
   position: absolute;
