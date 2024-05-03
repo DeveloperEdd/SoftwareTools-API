@@ -8,6 +8,10 @@
 
 .hero-toolBox > div > h2 {
   margin-bottom: 1rem;
+  position: absolute;
+  top: 13%;
+  left: 20%;
+  display: inline-block;
 }
 
 .toolBox {
@@ -69,4 +73,13 @@
   position: fixed;
   right: 15%;
   top: 57%;
+}
+
+.hero-toolbox_img {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.hero-toolbox_img__mercurial {
+  width: 80px;
 }
