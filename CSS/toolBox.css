@@ -4,6 +4,7 @@
   background-color: var(--color-green);
   width: 484px;
   height: 346px;
+  text-align: justify;
 }
 
 .hero-toolBox > div > h2 {
