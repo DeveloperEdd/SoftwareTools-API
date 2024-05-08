@@ -84,3 +84,9 @@
 .hero-toolbox_img__mercurial {
   width: 80px;
 }
+
+#testLink-icon,
+#microFocus-icon {
+  width: fit-content;
+  border-radius: 10px;
+}
