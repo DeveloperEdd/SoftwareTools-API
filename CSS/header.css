@@ -7,71 +7,47 @@
   box-sizing: border-box;
 }
 
-/* Variables */
+/* Variáveis */
 :root {
   --color-green: #003033;
   --color-btn: #00484d;
   --color-white: #fff;
-}
-
-body {
-  z-index: 1;
-  min-height: 100vh;
-  display: block;
-}
-
-/* Background image */
-body::before {
-  content: "";
-  position: absolute;
-  min-width: 100vw;
-  min-height: 100vh;
-  background-image: url(../img/wolf-icon.svg);
-  background-repeat: no-repeat;
-  background-position: top right;
-  opacity: 0.3;
-  z-index: -1;
-  pointer-events: none;
+  --color-grey: #cccccc;
 }
 
 /* Header */
 .hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 2rem;
-}
-
-.hero-header_welcome {
-  text-align: center;
-  margin-top: 25vh;
+  position: relative;
 }
 
 .hero-header_title {
+  font-size: 4rem;
   font-family: "Alegreya Sans SC";
-  font-size: 7rem;
-  font-weight: 400;
+  font-weight: 500;
+  color: var(--color-green);
+}
+
+#hero-header_icon {
+  width: 64px;
+  height: 64px;
+  position: relative;
+}
+
+#hero-header_icon:hover {
+  transition: 0.5s;
+  height: 70px;
+  width: 70px;
 }
 
 .hero-header_sidebarBtn {
   background: none;
   border: solid 1px transparent;
   cursor: pointer;
-}
-
-/* Font style */
-p {
-  font-family: "Inter";
-  font-weight: 700;
-  font-size: 1.5rem;
-}
-
-span {
-  font-family: "Alegreya Sans SC";
-  font-size: 1.8rem;
-  border-bottom: solid 2px var(--color-green);
-}
-
-h1,
-p {
-  color: var(--color-green);
+  position: relative;
 }
 
 /* Tooltip base styles */
@@ -100,6 +76,13 @@ p {
 .hero-header_sidebarBtn[data-tooltip]::after {
   top: 50%;
   left: calc(100% + 0.5rem); /* Posiciona à direita com um pequeno espaço */
+  transform: translateY(-50%);
+}
+
+/* Posiciona a tooltip à esquerda do #hero-header_icon */
+#hero-header_icon[data-tooltip]::after {
+  top: 50%;
+  right: calc(100% + 0.5rem); /* Posiciona à esquerda com um pequeno espaço */
   transform: translateY(-50%);
 }
 
@@ -194,7 +177,7 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2); 
   z-index: 5;
   display: none;
 }
@@ -214,7 +197,11 @@ p {
     top: 2rem;
     left: 2rem;
   }
-
+  #hero-header_icon {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
   .hero-header_title {
     margin-top: 2rem;
     font-size: 3rem;
