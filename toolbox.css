@@ -66,6 +66,17 @@ body {
   border: solid 1px var(--color-btn);
 }
 
+@media (max-width: 500px) {
+  .hero-toolbox {
+    display: block;
+  }
+
+  .hero-toolbox > div {
+    width: 380px;
+    height: 400px;
+  }
+}
+
 /* Extra */
 #microFocus-icon,
 #testLink-icon {
