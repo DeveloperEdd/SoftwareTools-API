@@ -19,7 +19,7 @@
   background-color: hsl(184, 100%, 7%);
   width: 400px;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   display: none;
   z-index: 10;
