@@ -106,3 +106,17 @@
 .no-scroll {
   overflow: hidden;
 }
+
+@media (max-width: 950px) {
+  .hero-sidebar_navbar {
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .hero-sidebar_navbar {
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+  }
+}

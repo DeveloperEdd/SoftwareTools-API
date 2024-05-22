@@ -221,6 +221,18 @@ p {
     text-align: center;
     width: 100%;
   }
+  
+  .hero-sidebar_navbar {
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 1500px) {
+  .hero-sidebar_navbar {
+    margin-left: 3rem;
+    margin-bottom: 2rem;
+  }
 }
 
 /* Classe para aplicar o efeito de desfoque ao fundo */
