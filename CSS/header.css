@@ -92,100 +92,6 @@
   visibility: visible;
 }
 
-/* Sidebar */
-.hero-sidebar {
-  background-color: hsl(184, 100%, 7%);
-  width: 400px;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  display: none;
-  z-index: 10;
-}
-
-.hero-sidebar.active {
-  display: block;
-}
-
-.hero-sidebar_close {
-  background: none;
-  border: solid 1px transparent;
-  position: absolute;
-  right: 0;
-  padding: 1rem;
-}
-
-.hero-sidebar_close > img {
-  width: 40px;
-  cursor: pointer;
-}
-
-.hero-sidebar_title {
-  font-size: 48px;
-  font-weight: 800;
-  padding: 50px 0;
-  text-align: center;
-}
-
-.hero-sidebar_navbar {
-  margin-left: 3rem;
-}
-
-.hero-sidebar_navbar__option {
-  margin-bottom: 10px;
-  list-style: url(../img/sidebarOption-icon.svg);
-}
-
-.hero-sidebar_navbar__option > a {
-  text-decoration: none;
-  font-size: 24px;
-}
-
-.hero-sidebar_navbar__option > a:hover {
-  transition: 0.2s linear;
-  border-bottom: solid 1px var(--color-white);
-}
-
-.hero-sidebar_title,
-.hero-sidebar_navbar__option > a {
-  font-family: "Inter";
-  color: var(--color-white);
-}
-
-.about-us {
-  text-decoration: none;
-  color: var(--color-white);
-  background-color: var(--color-btn);
-  padding: 10px 100px;
-  font-family: "Inter";
-  font-size: 24px;
-  position: absolute;
-  bottom: 2rem;
-  left: 11%;
-  border-radius: 15px;
-}
-
-.about-us:hover {
-  background-color: var(--color-grey);
-  color: var(--color-green);
-  border: solid 1px var(--color-btn);
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2); 
-  z-index: 5;
-  display: none;
-}
-
-.overlay.active {
-  display: block;
-}
-
 @media (max-width: 950px) {
   .hero-header {
     flex-direction: column;
@@ -210,10 +116,16 @@
   }
 }
 
+/* Sidebar */
+.overlay.active {
+  display: block;
+}
+
 /* Classe para aplicar o efeito de desfoque ao fundo */
 .blur-background {
   filter: blur(5px);
   transition: filter 0.3s;
+  z-index: 5;
 }
 
 /* Ajuste na exibição da barra lateral */

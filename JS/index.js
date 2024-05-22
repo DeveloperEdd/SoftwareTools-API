@@ -12,6 +12,7 @@ showSidebarBtn.addEventListener('click', function () {
     sidebar.classList.toggle('active');
     headerContent.classList.toggle('blur-background');
     overlay.classList.add('active');
+    document.body.classList.add('no-scroll');
 });
 
 closeSidebarBtn.addEventListener('click', function () {
@@ -19,6 +20,7 @@ closeSidebarBtn.addEventListener('click', function () {
     sidebar.classList.remove('active');
     headerContent.classList.remove('blur-background');
     overlay.classList.remove('active');
+    document.body.classList.remove('no-scroll');
 });
 
 overlay.addEventListener('click', function () {
@@ -26,4 +28,5 @@ overlay.addEventListener('click', function () {
     sidebar.classList.remove('active');
     headerContent.classList.remove('blur-background');
     overlay.classList.remove('active');
+    document.body.classList.remove('no-scroll');
 });

@@ -2,17 +2,17 @@ const showSidebarBtn = document.querySelector('.hero-header .hero-header_sidebar
 const sidebar = document.querySelector('.hero-sidebar');
 const closeSidebarBtn = document.querySelector('.hero-sidebar_close');
 const headerContent = document.querySelector('.hero-header');
-const toolboxContent = document.querySelector('.hero-toolbox');
 const icon = document.getElementById('hero-header_icon');
 const overlay = document.querySelector('.overlay');
 const tooltips = document.querySelectorAll('[data-tooltip]');
+const aboutUsContent = document.querySelector('.hero-aboutUs');
 
 // Show the side bar
 showSidebarBtn.addEventListener('click', function () {
     sidebar.style.display = 'block';
     sidebar.classList.toggle('active');
     headerContent.classList.toggle('blur-background');
-    toolboxContent.classList.toggle('blur-background');
+    aboutUsContent.classList.toggle('blur-background');
     overlay.classList.add('active');
     document.body.classList.add('no-scroll');
 });
@@ -22,7 +22,7 @@ closeSidebarBtn.addEventListener('click', function () {
     sidebar.style.display = 'none';
     sidebar.classList.remove('active');
     headerContent.classList.remove('blur-background');
-    toolboxContent.classList.remove('blur-background');
+    aboutUsContent.classList.remove('blur-background');
     overlay.classList.remove('active');
     document.body.classList.remove('no-scroll');
 });
@@ -31,7 +31,7 @@ overlay.addEventListener('click', function () {
     sidebar.style.display = 'none';
     sidebar.classList.remove('active');
     headerContent.classList.remove('blur-background');
-    toolboxContent.classList.remove('blur-background');
+    aboutUsContent.classList.remove('blur-background');
     overlay.classList.remove('active');
     document.body.classList.remove('no-scroll');
 });
